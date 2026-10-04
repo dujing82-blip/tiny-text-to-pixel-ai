@@ -6,7 +6,6 @@ Students train a Conditional Variational Autoencoder (CVAE) in Google Colab to g
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dujing82-blip/tiny-text-to-pixel-ai/blob/main/Tiny_Text_to_Pixel_AI_Colab.ipynb)
 
-![Dataset preview](dataset_preview.png)
 
 ## The idea
 
@@ -38,7 +37,7 @@ The model sees every individual concept, but never these exact combinations. Stu
 
 ## Dataset
 
-The included dataset contains **3,050 procedurally generated 16×16 RGB pixel-art images**:
+The included generator reproducibly creates **3,050 procedurally generated 16×16 RGB pixel-art images**:
 
 - 2,800 training images
 - 250 images from the five held-out combinations
@@ -46,7 +45,7 @@ The included dataset contains **3,050 procedurally generated 16×16 RGB pixel-ar
 
 ## Run the lesson
 
-Click **Open in Colab** above and run the notebook from top to bottom. The notebook downloads the dataset directly from this GitHub repository, so students do not need to upload any files manually.
+Click **Open in Colab** above and run the notebook from top to bottom. The notebook downloads `generate_dataset.py` from this repository and builds the teaching dataset automatically, so students do not need to upload any files manually.
 
 ## What students learn
 
@@ -97,8 +96,7 @@ tiny-text-to-pixel-ai/
 ├── LICENSE
 ├── .gitignore
 ├── Tiny_Text_to_Pixel_AI_Colab.ipynb
-├── tiny_pixel_dataset.zip
-└── dataset_preview.png
+└── generate_dataset.py
 ```
 
 ## Requirements
