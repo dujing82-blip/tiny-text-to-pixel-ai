@@ -1,5 +1,13 @@
 # Tiny Text-to-Pixel AI
 
+## New: Monster Generator diffusion lab
+
+A complete 32×32 text-conditioned diffusion lesson is available in [monster_diffusion](monster_diffusion/README.md), with prepared data, trainable word embeddings, training, generation, and forward/reverse diffusion demonstrations.
+
+[![Open Monster Generator in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dujing82-blip/tiny-text-to-pixel-ai/blob/main/monster_diffusion/Monster_Generator_Colab.ipynb)
+
+## Original CVAE project
+
 A tiny, from-scratch **text-conditioned generative AI** project for teaching embeddings, latent representations, and image generation.
 
 Students train a Conditional Variational Autoencoder (CVAE) in Google Colab to generate **16×16 pixel art** from prompts such as `red small robot`, `blue big spaceship`, and `green big heart`.

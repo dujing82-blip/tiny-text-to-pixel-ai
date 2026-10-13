@@ -1,0 +1,49 @@
+{
+  "seed": 2026,
+  "shape": [
+    14480,
+    32,
+    32,
+    3
+  ],
+  "dtype": "uint8",
+  "attributes": {
+    "color": [
+      "green",
+      "blue",
+      "red",
+      "purple"
+    ],
+    "eyes": [
+      "one",
+      "two",
+      "three"
+    ],
+    "horns": [
+      "no horns",
+      "horns"
+    ],
+    "mood": [
+      "happy",
+      "sad"
+    ]
+  },
+  "split_ids": {
+    "train": 0,
+    "validation": 1,
+    "unseen_combination": 2
+  },
+  "counts": {
+    "train": 13200,
+    "validation": 880,
+    "unseen_combination": 400
+  },
+  "held_out": [
+    "happy green monster with three eyes and horns",
+    "sad blue monster with one eye and no horns",
+    "sad red monster with two eyes and horns",
+    "happy purple monster with three eyes and no horns"
+  ],
+  "sha256": "103c7e0ac28174378fd97f13e413e4a03905b75c3d70e746ea25d99ef3e49a11",
+  "license": "MIT; original procedurally generated teaching artwork"
+}

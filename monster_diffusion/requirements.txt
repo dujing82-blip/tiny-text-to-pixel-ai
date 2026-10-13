@@ -1,0 +1,6 @@
+# Colab already includes GPU PyTorch. Keep its CUDA-compatible installation.
+torch>=2.3,<3
+numpy>=1.26,<3
+Pillow>=10,<13
+matplotlib>=3.8,<4
+ipywidgets>=8,<9
