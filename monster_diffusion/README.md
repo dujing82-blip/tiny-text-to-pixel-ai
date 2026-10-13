@@ -1,5 +1,19 @@
 # Monster Generator — a tiny diffusion classroom
 
+## Simple TensorFlow notebook — start here for the shorter lesson
+
+[![Open Simple TensorFlow Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dujing82-blip/tiny-text-to-pixel-ai/blob/main/monster_diffusion/Monster_Generator_Colab_simple.ipynb)
+
+**[Monster_Generator_Colab_simple.ipynb](Monster_Generator_Colab_simple.ipynb)** is a self-contained, six-code-cell TensorFlow/Keras version with about 163 lines including comments. It keeps only dataset loading, forward noising, a small conditional U-Net, noise-prediction training, prompt encoding, and generation with a reverse-diffusion image strip. It downloads the existing dataset and no helper Python modules. All student-facing comments and explanations are in English.
+
+The simple version uses a 394,067-parameter model, 16-dimensional word embeddings, 200 noise levels, batch 64, and 4,000 training steps. Rerun its training cell to continue; runtime resets lose its in-memory model. It omits checkpoints, EMA, guidance, validation dashboards, interactive widgets and export controls.
+
+All six code cells were executed in TensorFlow 2.21 CPU with a short training run. Gradient updates, generation, all 48 prompt combinations, invalid prompts and continued training were checked. Full GPU training time and final image quality were not benchmarked for this version.
+
+The detailed PyTorch notebook and its settings are described below.
+
+---
+
 Train a small **text-conditioned diffusion model from scratch** in Google Colab, then generate 32×32 RGB monsters from a prompt such as:
 
 > happy green monster with three eyes and horns
